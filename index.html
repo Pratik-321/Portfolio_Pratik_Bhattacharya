@@ -1,93 +1,251 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Pratik Bhattacharya - Data Science Portfolio</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratik Bhattacharya - Data Scientist</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Add your custom CSS styles here */
+        /* For example: */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://img.freepik.com/free-vector/creative-geometric-design-space_53876-89781.jpg?w=996&t=st=1701702108~exp=1701702708~hmac=cc629bd1dea39c50da79495c13e53c431a380eb3268f305c277aa667d33fc9fa');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            color: #fff;
+        }
+
+        /* Define your styles for header, main, sections, footer, etc. */
+        header {
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            color: #333; /* Change font color */
+            font-family: 'Verdana', sans-serif;
+        }
+        h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #555; /* Change heading color */
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .social-links a {
+            margin-right: 10px;
+            color: #333;
+        }
+        footer {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px 0;
+            color: #333;
+            border-top: 1px solid #ccc;
+        }
+    </style>
 </head>
 <body>
-    <h1>Pratik Bhattacharya</h1>
-    <p>Software Developer</p>
+    <header>
+        <div class="container">
+            <h1>Pratik Bhattacharya</h1>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#awards">Awards & Rewards</a>
+                <a href="#achievements">Achievements</a>
+                <a href="#internships">Internships</a>
+                <a href="#certifications">Certifications</a>
+                <a href="#education">Education</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-    <div class="contact-info">
-        <p>Contact: 7020841850 | pratikbhattacharyabl@gmail.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/pratik-bhattacharya-172104263">Pratik Bhattacharya</a></p>
-        <p>Location: Nagpur, Maharashtra, India</p>
-    </div>
+    <main>
+        <section id="home">
+            <div class="container">
+                <h2>Home</h2>
+                <p>I am a dedicated data science student with strong skills in analytics, machine learning, and data visualization. My aim is to secure a role in the IT sector, where I can apply my expertise to drive innovation and make data-driven decisions. My commitment to continuous learning and proven academic record position me as a promising candidate for data-driven roles in the industry.</p>
+            </div>
+        </section>
 
-    <h2>Experience</h2>
+        <section id="about">
+            <div class="container">
+                <h2>About</h2>
+                <p>Interests: Reading Books, Exploring Nature, Cooking</p>
+            </div>
+        </section>
 
-    <div class="experience">
-        <h3>Martian Summer Intern</h3>
-        <p><strong>Persistent</strong> (06/2023 - Present)</p>
+        <section id="awards">
+            <div class="container">
+                <h2>Awards</h2>
+                <p>Achieved 1st prize in Essay Writing Competition in Quill Initiative, Inter-College essay writing Competition.</p>
+            </div>
+        </section>
+
+        <section id="achievements">
+    <div class="container">
+        <h2>Achievements</h2>
         <ul>
-            <li>Collaborated with the team to research, analyze, and implement industry-aligned solutions using Linux, DBMS, Core Java, and data structures.</li>
-        </ul>
-
-        <h3>Statistics Tutor</h3>
-        <p><strong>Chegg India</strong> (05/2023 - Present)</p>
-        <ul>
-            <li>Consistently provided exceptional academic support and guidance to students seeking assistance with statistics.</li>
-        </ul>
-
-        <h3>AI Intern</h3>
-        <p><strong>Smilebird Dental Services</strong> (05/2023 - Present)</p>
-        <ul>
-            <li>Developed and implemented an innovative AI-powered solution for diagnosing teeth-related problems using advanced CNN technology, revolutionizing the dental industry's diagnostic capabilities.</li>
-        </ul>
-    </div>
-
-    <h2>Education</h2>
-
-    <div class="education">
-        <p><strong>Data Science 2024</strong></p>
-        <p><strong>Shri Ramdeobaba College of Engineering and Management</strong> - B.Tech in Computer Science Engineering with Data Science</p>
-    </div>
-
-    <h2>Projects</h2>
-
-    <div class="projects">
-        <ul>
-            <li>Stock Market Prediction and forecasting using Python Dash.</li>
-            <li>Measuring Text Similarity using LDA Bert embeddings.</li>
-            <li>Development of a deep Convolutional Neural Network (CNN) for Tropical Cyclone intensity estimation using half-hourly INSAT-3D IR Images.</li>
-        </ul>
-    </div>
-
-    <h2>Certificates</h2>
-
-    <div class="certificates">
-        <ul>
-            <li>Python Essentials -1 by Cisco Networking academy (07/2023 - Present)</li>
-            <li>Google Analytics Certification by Skillshop (05/2023 - Present)</li>
-            <li>Google Digital Garage by IAB Europe (04/2023 - Present)</li>
-            <li>Cybersecurity Virtual Experience Program by JP Morgan (03/2023 - Present)</li>
-            <li>Data Analytics and Visualization Virtual by Accenture (02/2023 - Present)</li>
+            <li>Solved 80+ problems in statistics</li>
+            <li>Took 5 doubt solving sessions with 100+ students</li>
+            <li>5 star Python Coder on HackerRank</li>
+            <li>MHT CET percentile: 97%</li>
         </ul>
     </div>
+</section>
 
-    <h2>Skills</h2>
 
-    <div class="skills">
+        <section id="internships">
+    <div class="container">
+        <h2>Internships</h2>
         <ul>
-            <li>Data Science: Intermediate</li>
-            <li>Python: Advanced</li>
-            <li>Machine and Deep learning: Intermediate</li>
-            <li>NLP: Intermediate</li>
-            <li>SQL: Intermediate</li>
-            <li>Content Writing: Intermediate</li>
-            <li>DSA: Intermediate</li>
+            <li>
+                <strong>Persistent Systems. - Summer Martian Intern</strong>
+                <ul>
+                    <li>Collaborated with the team to research, analyze, and implement industry-aligned solutions using Linux, DBMS, Python.</li>
+                    <li>Participated in training sessions and workshops to enhance technical skills and gain practical experience in real-world projects.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Chegg India - Statistics Tutor</strong>
+                <ul>
+                    <li>Consistently offered exceptional academic support and guidance to students seeking assistance with statistics.</li>
+                    <li>Demonstrated expertise in statistics to provide effective and valuable support to students.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>YBI foundations - Data Science Intern</strong>
+                <ul>
+                    <li>Applied data science and machine learning techniques to develop predictive models for estimating the compressive strength of cement bricks, specifically for ACC Cement Company.</li>
+                    <li>Leveraged data-driven approaches to enhance the accuracy and efficiency of predicting the strength of these bricks, contributing to more informed decision-making in the construction industry.</li>
+                </ul>
+            </li>
         </ul>
     </div>
+</section>
 
-    <h2>Languages</h2>
 
-    <div class="languages">
+        <section id="certifications">
+    <div class="container">
+        <h2>Certifications</h2>
         <ul>
-            <li>English: Fluent</li>
-            <li>Bengali: Native</li>
-            <li>Hindi: Native</li>
-            <li>Marathi: Fluent</li>
+            <li>
+                <strong>Google Digital Garage</strong> - 30 Nov, 2024
+                <p>Google Digital Garage is an online learning platform that offers a wide range of free courses on digital marketing, entrepreneurship, and essential digital skills. It's designed to help individuals and businesses improve their online presence and digital literacy.</p>
+            </li>
+            <li>
+                <strong>Google Analytics</strong> - 01 Mar, 2024
+                <p>The Google Analytics certificate is a recognized credential that demonstrates proficiency in using Google Analytics, a powerful web analytics tool. This certification showcases expertise in tracking website performance, analyzing user data, and extracting valuable insights to optimize online strategies.</p>
+            </li>
+            <li>
+                <strong>Cybersecurity Virtual Experience program by JP Morgan</strong>
+                <ul>
+                    <li>Analyze a Large Dataset of Fraud in Financial Payment Services</li>
+                    <li>Learn About Application Security Fundamentals and Put it to Use on Your Own Website</li>
+                    <li>Spam or Ham? Build an Email Classifier</li>
+                    <li>Design and Develop a System to Tighten Access to Sensitive Information (Bonus Task)</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Data Visualisation Virtual Experience by Accenture</strong>
+                <ul>
+                    <li>Project Understanding</li>
+                    <li>Data Cleaning & Modeling</li>
+                    <li>Data Visualization & Storytelling</li>
+                    <li>Present to the Client</li>
+                </ul>
+            </li>
         </ul>
     </div>
+</section>
+
+
+        <section id="education">
+    <div class="container">
+        <h2>Education</h2>
+        <ul>
+            <li>
+                <strong>Shri Ramdeobaba College of Engineering and Management</strong> - 2020 - 2024
+                <ul>
+                    <li>B.Tech. - CSE - Data Science | CGPA: 8.23 / 10.00</li>
+                    <li>12th | Percentage: 77.54 / 100.00</li>
+                    <li>10th | Percentage: 89.00 / 100.00</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+        <section id="projects">
+    <div class="container">
+        <h2>Projects</h2>
+        <ol>
+            <li>
+                <h3>An approach of measuring Text Similarity using LDA+BERT Embeddings</h3>
+                <p>Date: 01 Feb, 2023 - 01 Jun, 2024<br>
+                Mentor: Prof. Ashwini Zadgaonkar | Team Size: 5</p>
+                <ul>
+                    <li>Increased the accuracy and working of the BERT model by using a LDA+BERT Combinations</li>
+                    <li>Analyzed the working of this model on different types of documents, also proposed this research project in 3+ Conferences of NIT WARANGAL, NIT RAIPUR, etc</li>
+                </ul>
+            </li>
+            <li>
+                <h3>Stocks Market Prediction and Forecasting using Python Dash</h3>
+                <p>Date: 01 Sep, 2022 - 01 Feb, 2024<br>
+                Mentor: Dr. Pravin Sonsare Sir | Team Size: 5</p>
+                <ul>
+                    <li>Designed a multi-functionality dashboard with over 9-10 features in a single dashboard</li>
+                    <li>Developed a LSTM Prediction model with the accuracy of 81%</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+</section>
+
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <div class="social-links">
+                    <a href="https://twitter.com/PratikB67466905?t=E9EyOODfb73J2Qsh7PTfMA&s=09" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="https://github.com/Pratik-321" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/pratik-bhattacharya-" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="" target="_blank" class="social-icon"><i class="far fa-envelope"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Pratik Bhattacharya - Data Scientist</p>
+        </div>
+
+    </footer>
+
+    <!-- JavaScript for opening social media profiles -->
+    <script>
+        // Add JavaScript functionality to open social media profiles here
+    </script>
 </body>
 </html>
